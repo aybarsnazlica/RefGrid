@@ -25,7 +25,7 @@ struct SlideshowViewer: View {
         .ignoresSafeArea()
         .statusBarHidden()
         .background(.black)
-        .keepScreenOn(when: true)
+        .keepScreenOn()
         .task {
             changeSlide()
         }
