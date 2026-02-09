@@ -5,7 +5,6 @@
 // See LICENSE for license information.
 //
 
-
 import SwiftData
 
 @Model
@@ -20,4 +19,3 @@ class Album {
         self.duration = duration
     }
 }
-

@@ -5,7 +5,6 @@
 // See LICENSE for license information.
 //
 
-
 import SwiftUI
 
 struct DocumentsImageView: View {
@@ -17,4 +16,3 @@ struct DocumentsImageView: View {
             .scaledToFit()
     }
 }
-

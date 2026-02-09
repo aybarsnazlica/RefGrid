@@ -5,7 +5,6 @@
 // See LICENSE for license information.
 //
 
-
 import PhotosUI
 import SwiftUI
 import SwiftData
@@ -27,7 +26,6 @@ struct AlbumEditor: View {
                     Text("2 minutes").tag(60*2)
                     Text("60 seconds").tag(60)
                     Text("30 seconds").tag(30)
-                
 
                     #if DEBUG
                     Text("3 seconds").tag(3)
