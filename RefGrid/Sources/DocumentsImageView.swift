@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct DocumentsImageView: View {
-    var url: URL
+  var url: URL
 
-    var body: some View {
-        Image(uiImage: UIImage(contentsOfFile: url.path()) ?? .add)
-            .resizable()
-            .scaledToFit()
-    }
+  var body: some View {
+    Image(uiImage: UIImage(contentsOfFile: url.path()) ?? .add)
+      .resizable()
+      .scaledToFit()
+  }
 }

@@ -9,19 +9,19 @@ import SwiftUI
 import UIKit
 
 private struct KeepScreenOnModifier: ViewModifier {
-    func body(content: Content) -> some View {
-        content
-            .onAppear {
-                UIApplication.shared.isIdleTimerDisabled = true
-            }
-            .onDisappear {
-                UIApplication.shared.isIdleTimerDisabled = false
-            }
-    }
+  func body(content: Content) -> some View {
+    content
+      .onAppear {
+        UIApplication.shared.isIdleTimerDisabled = true
+      }
+      .onDisappear {
+        UIApplication.shared.isIdleTimerDisabled = false
+      }
+  }
 }
 
-public extension View {
-    func keepScreenOn() -> some View {
-        modifier(KeepScreenOnModifier())
-    }
+extension View {
+  public func keepScreenOn() -> some View {
+    modifier(KeepScreenOnModifier())
+  }
 }
