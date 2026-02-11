@@ -10,10 +10,10 @@ import SwiftUI
 
 @main
 struct RefGridApp: App {
-  var body: some Scene {
-    WindowGroup {
-      ContentView()
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+        .modelContainer(for: Album.self)
     }
-    .modelContainer(for: Album.self)
-  }
 }
