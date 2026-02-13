@@ -18,8 +18,8 @@ struct SlideshowViewer: View {
             dismiss()
         } label: {
             ZStack {
-                DocumentsImageView(url: album.photos[currentImageIndex].documentsURL).gridOverlay(
-                    rows: 3, columns: 3)
+                DocumentsImageView(url: album.photos[currentImageIndex].documentsURL)
+                    .gridOverlay(rows: 3, columns: 3)
             }
 
         }
